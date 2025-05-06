@@ -1,1 +1,1 @@
-A Demo App that generates quotes.
+A Demo App that generates quotes using HTML, CSS and Vanilla JavaScript.
