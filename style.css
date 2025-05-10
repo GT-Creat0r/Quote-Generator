@@ -107,10 +107,14 @@ body.dark .quote-box {
 }
 
 .author {
-  margin-top: 1em;
   font-size: 1rem;
   color: #555;
   font-style: italic;
+  text-align: center;;
+}
+
+body.dark .author {
+  color: #f9f9f9;
 }
 
 .buttons {

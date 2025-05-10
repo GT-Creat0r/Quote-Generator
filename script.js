@@ -105,14 +105,9 @@ nextBtn.addEventListener("click", () => {
 });
 
 randomBtn.addEventListener("click", () => {
-  const allQuotes = [];
-  for (let cat in quotes) {
-    allQuotes.push(...quotes[cat]);
-  }
-  const randomIdx = Math.floor(Math.random() * allQuotes.length);
-  const quote = allQuotes[randomIdx];
-  quoteBox.textContent = `"${quote.text}`;
-  authorBox.textContent = `-${quote.author}`;
+  const categoryQuotes = quotes[currentCategory];
+  currentIndex = Math.floor(Math.random() * categoryQuotes.length);
+  updateQuote();
 });
 
 increaseFontBtn.addEventListener("click", () => {
