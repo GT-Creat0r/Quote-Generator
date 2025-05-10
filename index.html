@@ -10,31 +10,32 @@
     <div class="container">
       <h1>Quote Generator</h1>
       <div class="controls">
-        <select id="categorySelect">
+        <select id="category">
           <option value="science">Science</option>
           <option value="motivation">Motivation</option>
-          <option avlue="funny">Funny</option>
+          <option value="funny">Funny</option>
         </select>
 
-        <div class="switch">
-          <input type="checkbox" id="darkMode" />
-          <label for="darkMode">Dark Mode</label>
+        <label class="switch">
+          <input type="checkbox" id="themeToggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+        <div class="quote-box" id="quoteBox"></div>
+        <div class="author" id="author"></div>
+        
+        
+        <div class="buttons">
+          <button id="previousBtn">Previous</button>
+          <button id="randomBtn">Random</button>
+          <button id="nextBtn">Next</button>
         </div>
 
         <div class="font-controls">
           <button id="increaseFont">A+</button>
+          <span>Font Size</span>
           <button id="decreaseFont">A-</button>
         </div>
-
-        <div class="quote-box" id="quoteBox"></div>
-        <div class="aurthor" id="author"></div>
-
-        <div class="buttons">
-          <button id="previousBtn">Previous</button>
-          <button id="RandomBtn">Random</button>
-          <button id="nextBtn">Next</button>
-        </div>
-      </div>
     </div>
 
     <script src="script.js"></script>
